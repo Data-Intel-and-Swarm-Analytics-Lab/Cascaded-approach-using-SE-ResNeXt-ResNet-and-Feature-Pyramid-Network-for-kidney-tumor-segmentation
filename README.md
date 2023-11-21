@@ -4,9 +4,10 @@ This project employs a cascaded approach utilizing SE_ResNeXt, ResNet, and Featu
 ## Project Overview
 
 ### Dependencies Installation:
-install all the dependencies
+run pip install -r requirements.txt to install all the dependencies
 
 ### Data Preprocessing:
+The KiTS-19 dataset was used for this training -> https://github.com/neheller/kits19
 Extract slices from each scan and rename them using the rename_dataset.py script.
 Use the load_images function to preprocess the data while loading the slices.
 Call change_masks_background to convert kidney tumors to the foreground and other kidney parts to the background.
